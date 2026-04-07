@@ -3,6 +3,10 @@ function validarSenha() {
   const confirmarSenha = document.getElementById("confirmarSenha").value;
   const mensagem = document.getElementById("mensagem");
 
+  function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+}
+
   if (senha.length < 6) {
     mensagem.textContent = "A senha precisa ter pelo menos 6 caracteres.";
     return false;

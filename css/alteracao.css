@@ -118,3 +118,13 @@ hr{
     width: 100%;
     border: 1px solid rgb(185, 181, 181);
 }
+
+.dark-mode {
+  background: #121212;
+  color: white;
+}
+
+.dark-mode .container {
+  background: #1e1e1e;
+  color: white;
+}
