@@ -1,0 +1,112 @@
+:root{
+    --color-verde: #023C2B;
+    --color-branco: white;
+    --color-cinza: rgb(245, 245, 245);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-cinza);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.banner_educ{
+    width: 70%;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 70vh;
+}
+
+.content-logo{
+    width: 600px;
+}
+
+.content-login{
+    width: 350 px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.content-box{
+    background-color: var(--color-branco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    box-shadow: rgb(0 0 0 / 10%) 0px 2px 4px, rgb(0 0 0 / 10%) 0px 8px 16px;
+    border-radius: 10px;
+
+}
+
+.inputs{
+    padding: 15px;
+    height: 22px;
+    border-radius: 6px;
+    border: 1px solid rgb(170, 170, 170);
+    outline: none;
+    width: 90%;
+    font-size: 16px;
+    color: black;
+    
+}
+
+.btn{
+    padding: 15px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.1rem;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.btn-entrar{
+    background-color: #023C2B;
+}
+
+.btn-entrar:hover{
+    background-color: aquamarine;
+    color: #023C2B;
+}
+
+.btn-criar{
+    background-color: #023C2B;
+}
+
+.btn-criar:hover{
+    background-color: aquamarine;
+    color: #023C2B;
+}
+
+.redefinirsenha{
+    color: var(--color-verde);
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.manterlogin{
+    color: var(--color-verde);
+    font-size: 15px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+hr{
+    width: 100%;
+    border: 1px solid rgb(185, 181, 181);
+}
