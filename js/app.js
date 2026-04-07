@@ -1,12 +1,18 @@
-function mostrarSenha() {
-  const senha = document.getElementById("senha");
-  const confirmarSenha = document.getElementById("confirmarSenha");
+function validarSenha() {
+  const senha = document.getElementById("senha").value;
+  const confirmarSenha = document.getElementById("confirmarSenha").value;
+  const mensagem = document.getElementById("mensagem");
 
-  if (senha.type === "password") {
-    senha.type = "text";
-    confirmarSenha.type = "text";
-  } else {
-    senha.type = "password";
-    confirmarSenha.type = "password";
+  if (senha.length < 6) {
+    mensagem.textContent = "A senha precisa ter pelo menos 6 caracteres.";
+    return false;
   }
+
+  if (senha !== confirmarSenha) {
+    mensagem.textContent = "As senhas não coincidem.";
+    return false;
+  }
+
+  mensagem.textContent = "Senha válida!";
+  return true;
 }
